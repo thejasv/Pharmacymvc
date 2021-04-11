@@ -1,0 +1,12 @@
+
+@{
+    ViewData["Title"] = "Logout";
+}
+
+<div class="jumbotron" style="height: 100vh">
+    <div class="container text-center mt-5">
+        <h1 class="mb-3">You are logged out successfully</h1>
+        @Html.ActionLink("Login Again","Login","User",null,new {@class="btn btn-danger"})
+    </div>
+</div>
+

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PharmacySupplyApp.Models.RepSchedule>
+
+@{
+    ViewData["Title"] = "Schedule";
+}
+
+<table class="table table-bordered table-hover mt-5">
+    <thead  class="table-danger">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RepName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatingAilment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MeetingSlot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfMeeting)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorContactNumber)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RepName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TreatingAilment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MeetingSlot)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfMeeting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorContactNumber)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

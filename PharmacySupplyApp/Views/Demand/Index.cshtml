@@ -1,0 +1,39 @@
+﻿@model IList<PharmacySupplyApp.Models.MedicineDemand>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row justify-content-center mx-5 mt-5 md-3">
+        <div class="col-4">
+            <b>@Html.DisplayNameFor(model=>model[0].MedicineName)</b>
+        </div>
+        <div class="col-4">
+            <b>@Html.DisplayNameFor(model=>model[0].Count)</b>
+        </div>
+    </div>
+    @using(Html.BeginForm("Index"))
+    {
+@for (int i=0;i<Model.ToList().Count;i++)
+{
+    <div class="row justify-content-center mx-5 my-1">
+        <div class="col-4">
+            @Html.DisplayFor(m=> Model[i].MedicineName)
+            @Html.HiddenFor(m => Model[i].MedicineName)
+        </div>
+        <div class="col-4">
+            @Html.EditorFor(m=>Model[i].Count,new {htmlAttributes = new {min=0}})
+        </div>
+    </div>
+}
+        <div class="row justify-content-center m-3">
+            <div class="col-3">
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-danger" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
