@@ -24,10 +24,8 @@ namespace PharmacySupplyApp.Providers
         {
             try
             {
-                var httpClient = new HttpClient();
-                httpClient.BaseAddress = new Uri("https://localhost:59415");
                 StringContent content = new StringContent(JsonConvert.SerializeObject(credentials), Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync("User/Login", content);
+                var response = await _httpClient.PostAsync("User/Login", content);
                 return response;
             }
             catch (Exception)

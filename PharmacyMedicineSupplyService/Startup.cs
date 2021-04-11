@@ -57,13 +57,14 @@ namespace PharmacyMedicineSupplyService
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseHttpsRedirection();
+            
             app.UseSwagger();
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "PharmacySupply");
 
             });
             app.UseRouting();
+
             app.UseAuthentication();
             app.UseAuthorization();
 
