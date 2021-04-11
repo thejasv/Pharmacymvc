@@ -50,7 +50,7 @@ namespace PharmacySupplyApp.Providers
         {
             try
             {
-                var response = await httpClient.GetAsync("https://localhost:44394/MedicineStockInformation");
+                var response = await httpClient.GetAsync("http://localhost:59930/MedicineStockInformation");
                
                 return response;
             }
