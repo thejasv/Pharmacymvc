@@ -11,8 +11,8 @@ namespace AuthService.Repositories
         
         private static readonly List<UserDto> Users = new List<UserDto>()
         {
-            new UserDto(){UserID = 1,UserName = "Ramesh",Password = "ramesh@123"},
-            new UserDto(){UserID = 2,UserName = "Suresh",Password = "suresh@123"}
+            new UserDto(){UserID = 1,UserName = "Ram",Password = "ram@123"},
+            new UserDto(){UserID = 2,UserName = "Sam",Password = "sam@123"}
         };
         public UserDto GetUser(User user)
         {
