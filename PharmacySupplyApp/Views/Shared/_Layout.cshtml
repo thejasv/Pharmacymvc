@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-danger navbar-dark pl-5 py-3 pr-5 ">
+        <nav class="navbar navbar-expand-md bg-success navbar-dark pl-5 py-3 pr-5 ">
             <a class="navbar-brand" asp-controller="User" asp-action="Index">Pharmacy Medicine Supply</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -22,33 +22,37 @@
                 <ul class="navbar-nav">
                     @if (Context.Session.GetString("userName") != null)
                     {
-        @if (ViewContext.RouteData.Values["controller"].ToString() == "User" && ViewContext.RouteData.Values["action"].ToString() == "Index")
-        {
-<li class="nav-item">
-    <a class="nav-link bg-light text-dark btn mx-2 active" asp-controller="User" asp-action="Index">Home</a>
-</li>
-                    <li class="nav-item">
-                        <a class="nav-link bg-danger text-light btn mx-2" asp-controller="User" asp-action="Contact">Contact</a>
-                    </li> }
-                                    else if (ViewContext.RouteData.Values["controller"].ToString() == "User" && ViewContext.RouteData.Values["action"].ToString() == "Contact")
-                                    {
-                    <li class="nav-item">
-                        <a class="nav-link bg-danger text-light btn mx-2" asp-controller="User" asp-action="Index">Home</a>
-                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link bg-light text-dark btn mx-2 active" asp-controller="User" asp-action="Contact">Contact</a>
-                                        </li> }
-                                                        else
-                                                        {
-                                        <li class="nav-item">
-                                            <a class="nav-link bg-danger text-light btn mx-2" asp-controller="User" asp-action="Index">Home</a>
-                                        </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link bg-danger text-light btn mx-2" asp-controller="User" asp-action="Contact">Contact</a>
-                                                            </li>}
+                        @if (ViewContext.RouteData.Values["controller"].ToString() == "User" && ViewContext.RouteData.Values["action"].ToString() == "Index")
+                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark btn mx-2 active" asp-controller="User" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light btn mx-2" asp-controller="User" asp-action="Contact">Contact</a>
+                            </li> 
+                         }
+                         else if (ViewContext.RouteData.Values["controller"].ToString() == "User" && ViewContext.RouteData.Values["action"].ToString() == "Contact")
+                         {
+                            <li class="nav-item">
+                                <a class="nav-link  text-light btn mx-2" asp-controller="User" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark btn mx-2 active" asp-controller="User" asp-action="Contact">Contact</a>
+                            </li> 
+                         }
+                         else
+                         {
+                            <li class="nav-item">
+                                <a class="nav-link bg-success text-light btn mx-2" asp-controller="User" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-success text-light btn mx-2" asp-controller="User" asp-action="Contact">Contact</a>
+                            </li>
+                         }
                         <a class="btn btn-danger" title="sign-out" asp-controller="User" asp-action="Logout">
                             <span class="fas fa-sign-out-alt"></span> @Context.Session.GetString("userName")
-                        </a>}
+                        </a>
+                     }
                 </ul>
             </div>
         </nav>
