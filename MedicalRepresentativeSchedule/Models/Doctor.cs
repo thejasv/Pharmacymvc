@@ -8,7 +8,7 @@ namespace MedicalRepresentativeSchedule.Models
     public class Doctor
     {
         public string Name { get; set; }
-        public int ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         public string TreatingAilment { get; set; }
 
     }

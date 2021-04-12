@@ -52,12 +52,13 @@ namespace MedicineStockModule.Repository
                 NumberOfTabletsInStock = 50
             },
 
+
         };
         
         public IEnumerable<MedicineStockDTO> GetAll()
         {
             
-            var MedicineStocklist = from Medicine in MedicineStockInformation select Medicine;
+            var MedicineStocklist = from Medicine in MedicineStockInformation where Medicine.NumberOfTabletsInStock>0 select Medicine;
             return MedicineStocklist.ToList();
            
         }

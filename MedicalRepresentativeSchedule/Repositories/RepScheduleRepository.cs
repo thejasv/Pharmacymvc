@@ -17,11 +17,11 @@ namespace MedicalRepresentativeSchedule.Repositories
         {
             doctors = new List<Doctor>()
              {
-               new Doctor { Name = "Doctor1",ContactNumber=987654321 , TreatingAilment="Orthopaedics"},
-               new Doctor { Name = "Doctor2",ContactNumber=987654321 , TreatingAilment="General"},
-               new Doctor { Name = "Doctor3",ContactNumber=987654321 , TreatingAilment="Gynaecology"},
-               new Doctor { Name = "Doctor4",ContactNumber=987654321 , TreatingAilment="General"},
-               new Doctor { Name = "Doctor5",ContactNumber=987654321 , TreatingAilment="Gynaecology"},
+               new Doctor { Name = "Doctor1",ContactNumber="9876543210", TreatingAilment="Orthopaedics"},
+               new Doctor { Name = "Doctor2",ContactNumber="9876543210" , TreatingAilment="General"},
+               new Doctor { Name = "Doctor3",ContactNumber="9876543210" , TreatingAilment="Gynaecology"},
+               new Doctor { Name = "Doctor4",ContactNumber="9876543210" , TreatingAilment="General"},
+               new Doctor { Name = "Doctor5",ContactNumber="9876543210" , TreatingAilment="Gynaecology"},
              };
 
             representatives = new List<RepresentativeDetails>()

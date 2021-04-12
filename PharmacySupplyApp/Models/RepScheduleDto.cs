@@ -23,6 +23,6 @@ namespace PharmacySupplyApp.Models
         [Required]
         public string DateOfMeeting { get; set; }
         [Required]
-        public int DoctorContactNumber { get; set; }
+        public string DoctorContactNumber { get; set; }
     }
 }

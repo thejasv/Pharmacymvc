@@ -38,12 +38,10 @@ namespace MedicalRepresentativeSchedule.Providers
         {
             try
             {
-                
                 return _repScheduleRepository.GetDoctorDetails();
             }
             catch (Exception)
             {
-                
                 throw;
             }
         }
@@ -51,12 +49,10 @@ namespace MedicalRepresentativeSchedule.Providers
         {
             try
             {
-                
                 return _repScheduleRepository.GetRepresentativesDetails();
             }
             catch (Exception)
             {
-                
                 throw;
             }
         }
