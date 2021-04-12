@@ -8886,19 +8886,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\THEJAS H V\\.nuget\\packages\\": {}
+    "C:\\Users\\892781\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mfpeassessment\\MedicalRepresentativeSchedule\\MedicalRepresentativeSchedule.csproj",
+      "projectUniqueName": "C:\\Users\\892781\\source\\repos\\Pharmacy project\\MedicalRepresentativeSchedule\\MedicalRepresentativeSchedule.csproj",
       "projectName": "MedicalRepresentativeSchedule",
-      "projectPath": "D:\\mfpeassessment\\MedicalRepresentativeSchedule\\MedicalRepresentativeSchedule.csproj",
-      "packagesPath": "C:\\Users\\THEJAS H V\\.nuget\\packages\\",
-      "outputPath": "D:\\mfpeassessment\\MedicalRepresentativeSchedule\\obj\\",
+      "projectPath": "C:\\Users\\892781\\source\\repos\\Pharmacy project\\MedicalRepresentativeSchedule\\MedicalRepresentativeSchedule.csproj",
+      "packagesPath": "C:\\Users\\892781\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\892781\\source\\repos\\Pharmacy project\\MedicalRepresentativeSchedule\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\THEJAS H V\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\892781\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8987,7 +8992,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
